@@ -53,14 +53,14 @@ gulp.task("images", function () {
     imagemin.jpegtran({progressive: true}),
     imagemin.svgo()
   ]))
-  .pipe(gulp.dest("img"));
+  .pipe(gulp.dest("build/img"));
 });
 
 //Конвертация в webp
 gulp.task("webp", function () {
   return gulp.src("src/img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("img"));
+  .pipe(gulp.dest("build/img"));
 });
 
 //SVG спрайт
@@ -70,7 +70,7 @@ gulp.task("sprite", function () {
     inlineSvg: true
   }))
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("img"));
+  .pipe(gulp.dest("build/img"));
 });
 
 posthtml-include
