@@ -53,14 +53,14 @@ gulp.task("images", function () {
     imagemin.jpegtran({progressive: true}),
     imagemin.svgo()
   ]))
-  .pipe(gulp.dest("build/img"));
+  .pipe(gulp.dest("src/img"));
 });
 
 //Конвертация в webp
 gulp.task("webp", function () {
   return gulp.src("src/img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("build/img"));
+  .pipe(gulp.dest("src/img"));
 });
 
 //SVG спрайт
@@ -70,7 +70,7 @@ gulp.task("sprite", function () {
     inlineSvg: true
   }))
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"));
+  .pipe(gulp.dest("src/img"));
 });
 
 posthtml-include
@@ -90,11 +90,11 @@ gulp.task("clean", function () {
 //Копирование в build
 gulp.task("copy", function () {
   return gulp.src([
-    "fonts/**/*.{woff,woff2}",
-    "img/**",
-    "js/**"
+    "src/fonts/**/*.{woff,woff2}",
+    "src/img/**",
+    "src/js/**"
   ], {
-    base: "."
+    base: "src/"
   })
   .pipe(gulp.dest("build"));
 });
