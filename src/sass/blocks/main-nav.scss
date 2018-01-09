@@ -1,0 +1,46 @@
+.main-nav {
+	display: flex;
+	text-transform: uppercase;
+}
+
+.main-nav__list {
+	@include list-style-reset;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 485px;
+	padding-top: 22px;
+}
+
+.main-nav__list li {
+	text-align: center;
+	flex-grow: 1;
+}
+
+.main-nav__item {
+	padding: 10px;
+}
+
+.main-nav__cart {
+	text-transform: uppercase;
+	padding-top: 32px;
+	padding-right: 1px;
+	padding-left: 41px;
+	margin-left: auto;
+}
+
+.main-nav__link {
+	color: $black;
+
+	&:visited {
+		color: $black;
+	}
+
+	&:hover {
+		color: $light-red;
+	}
+
+	&:active {
+		color: $active-grey;
+	}
+}
