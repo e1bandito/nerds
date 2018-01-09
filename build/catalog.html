@@ -28,45 +28,55 @@
 
     <main class="page-catalog">
 
-      <h1 class="page-catalog__title">Магазин готовых шаблонов</h1>
+    <h1 class="catalog__title">Магазин готовых шаблонов</h1>
+    
+      <section class="sort-form">
 
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <h2 class="sort-form__title">СТОИМОСТЬ:</h2>
 
-      <form class="sort-form" action="https://echo.htmlacademy.ru" method="get">
-        <h2 class="sort-form__title">СТОИМОСТЬ:</h2>
+          <input class="sort-form__range" type="range" name="price-range" id="price-range">
 
-        <input class="sort-form__range" type="range" name="price-range" id="price-range">
+          <div class="sort-form__grid">
+            <h2 class="sort-form__grid-title">СЕТКА:</h2>
+            <label class="sort-form__grid-label" for="adaptive">
+              <input class="sort-form__grid-type" name="grid-type" id="adaptive" type="radio" value="adaptive" checked="">
+            Адаптивная</label>
+            <label class="sort-form__grid-label" for="fix">
+              <input class="sort-form__grid-type" name="grid-type" id="fix" type="radio" value="fix">
+            Фиксированная</label>
+            <label class="sort-form__grid-label" for="rubber">
+              <input class="sort-form__grid-type" name="grid-type" id="rubber" type="radio" value="rubber">
+            Резиновая</label>
+          </div>
 
-        <div class="sort-form__grid">
-          <h2 class="sort-form__grid-title">СЕТКА:</h2>
-          <input class="sort-form__grid-type" name="grid-type" id="adaptive" type="radio" value="adaptive" checked="">
-          <label class="sort-form__grid-label" for="adaptive">Адаптивная</label>
-          <input class="sort-form__grid-type" name="grid-type" id="fix" type="radio" value="fix">
-          <label class="sort-form__grid-label" for="fix">Фиксированная</label>
-          <input class="sort-form__grid-type" name="grid-type" id="rubber" type="radio" value="rubber">
-          <label class="sort-form__grid-label" for="rubber">Резиновая</label>
-        </div>
+          <div class="sort-form__grid">
+            <h2 class="sort-form__grid-title">ОСОБЕННОСТИ:</h2>
+            <label class="sort-form__grid-label" for="slider">
+              <input class="sort-form__grid-type" name="slider" id="slider" type="checkbox" checked="">
+            Слайдер</label>
+            <label class="sort-form__grid-label" for="features">
+              <input class="sort-form__grid-type" name="features" id="features" type="checkbox">
+            Блок преимуществ</label>
+            <label class="sort-form__grid-label" for="news">
+              <input class="sort-form__grid-type" name="news" id="news" type="checkbox" checked="">
+            Новости</label>
+            <label class="sort-form__grid-label" for="galery">
+              <input class="sort-form__grid-type" name="galery" id="galery" type="checkbox">
+            Галерея</label>
+            <label class="sort-form__grid-label" for="cart">
+              <input class="sort-form__grid-type" name="cart" id="cart" type="checkbox">
+            Корзина</label>
+          </div>
 
-        <div class="sort-form__grid">
-          <h2 class="sort-form__grid-title">ОСОБЕННОСТИ:</h2>
-          <input class="sort-form__grid-type" name="slider" id="slider" type="checkbox" checked="">
-          <label class="sort-form__grid-label" for="slider">Слайдер</label>
-          <input class="sort-form__grid-type" name="features" id="features" type="checkbox">
-          <label class="sort-form__grid-label" for="features">Блок преимуществ</label>
-          <input class="sort-form__grid-type" name="news" id="news" type="checkbox" checked="">
-          <label class="sort-form__grid-label" for="news">Новости</label>
-          <input class="sort-form__grid-type" name="galery" id="galery" type="checkbox">
-          <label class="sort-form__grid-label" for="galery">Галерея</label>
-          <input class="sort-form__grid-type" name="cart" id="cart" type="checkbox">
-          <label class="sort-form__grid-label" for="cart">Корзина</label>
-        </div>
+          <button class="sort-form__button" type="submit">Показать</button>
 
-        <button class="sort-form__button" type="submit">Показать</button>
-
-      </form>
+        </form>
+      </section>
 
       <section class="sort">
         <div class="sort__controls">
-          <h2 class="sort__title">СОРТИРОВАТЬ:</h2>
+          <span class="sort__title">СОРТИРОВАТЬ:</span>
           <input type="checkbox" name="price" id="price" class="sort__checkbox" checked="">
           <label for="price" class="sort__label">По цене</label>
           <input type="checkbox" name="type" id="type" class="sort__checkbox">
@@ -178,7 +188,7 @@
 
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <img class="map__image" src="http://placehold.it/1440x416" alt="Карта">
+        <img class="map__image" src="img/-----2.png" alt="Карта">
         <div class="map__contacts">
           <h3 class="map__title">NЁRDS DESIGN STUDIO</h3>
           <p class="map__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -195,8 +205,10 @@
         <a class="social__link social__link--facebook" href="#">Facebook</a>
         <a class="social__link social__link--instagramm" href="#">Instagramm</a>
       </div>
-      <h2 class="page-footer__title">Давайте дружить, это выгодно!</h2>
-      <p class="page-footer__text">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="page-footer__info">
+        <h2 class="page-footer__title">Давайте дружить, это выгодно!</h2>
+        <p class="page-footer__text">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </footer>
 
   </body>
