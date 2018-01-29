@@ -1,25 +1,25 @@
 .slider {
-	width: 1440px;
-	background-color: $background-grey;
-	margin: 0 auto;
-	padding: 0 140px;
-	box-sizing: border-box;
+  width: 1440px;
+  background-color: $background-grey;
+  margin: 0 auto;
+  padding: 0 140px;
+  box-sizing: border-box;
 }
 
 .slider__item {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .slider:first-child,
 .slider:last-child {
-	display: none;
+  display: none;
 }
 
 .slider__title {
-	font-size: 55px;
-	font-weight: 500;
-	line-height: 55px;
-	margin: 0;
-	// white-space: pre;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  margin: 0;
+  // white-space: pre;
 }

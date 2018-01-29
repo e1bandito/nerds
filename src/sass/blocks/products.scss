@@ -1,16 +1,16 @@
 .products {
-	width: 1160px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: flex-start;
-	flex-wrap: wrap;
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .products__card {
-	width: 300px;
-	margin-right: 100px;
+  width: 300px;
+  margin-right: 100px;
 
-	&:nth-child(3n+1) {
-		margin-right: 0;
-	}
+  &:nth-child(3n+1) {
+    margin-right: 0;
+  }
 }
