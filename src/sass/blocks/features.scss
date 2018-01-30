@@ -3,4 +3,58 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  padding-top: 40px;
+}
+
+.features__title {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  margin-top: 35px;
+  margin-bottom: 34px;
+}
+
+.features__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.features__list-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.features__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features__item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 36px;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 23px;
+    top: 8px;
+    left: 0px;
+    border: 1px solid $light-red;
+  }
+}
+
+.features__info {
+  width: 660px;
+}
+
+.features__statistic {
+  width: 360px;
 }
