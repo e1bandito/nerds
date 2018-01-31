@@ -4,6 +4,8 @@
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
+  padding-bottom: 46px;
+  border-bottom: 2px solid $background-grey;
 }
 
 .features__title {
@@ -57,4 +59,36 @@
 
 .features__statistic {
   width: 360px;
+}
+
+.features__logo-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 34px;
+  margin-bottom: 42px;
+}
+
+.features__table {
+  border-collapse: collapse;
+}
+
+.features__table-title {
+  width: 106px;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.features__table-percent {
+  font-size: 27px;
+}
+
+.features__table-data {
+  height: 50px;
+  vertical-align: bottom;
 }

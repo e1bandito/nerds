@@ -1,7 +1,75 @@
 .partners {
+  box-sizing: border-box;
   width: 1160px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  padding: 46px 43px 44px 31px;
+  border-bottom: 2px solid $background-grey;
+}
+
+.partners__image--htmlacademy {
+  position: relative;
+  display: block;
+  padding-top: 14px;
+}
+
+.partners__link--htmlacademy {
+  position: relative;
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 50px;
+    top: 20px;
+    right: -50px;
+    border: 1px solid $background-grey;
+  }
+}
+
+.partners__image--barbershop {
+  display: block;
+  margin-left: 96px;
+}
+
+.partners__link--barbershop {
+  position: relative;
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 50px;
+    top: 18px;
+    right: -45px;
+    border: 1px solid $background-grey;
+  }
+}
+
+.partners__image--pink {
+  display: block;
+  padding-top: 17px;
+  margin-left: 101px;
+}
+
+.partners__link--pink {
+  position: relative;
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 50px;
+    top: 20px;
+    right: -60px;
+    border: 1px solid $background-grey;
+  }
+}
+
+.partners__image--bear {
+  display: block;
+  padding-top: 5px;
+  margin-left: 121px;
 }

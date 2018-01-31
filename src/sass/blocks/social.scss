@@ -1,0 +1,21 @@
+.social {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.social__link {
+  width: 79px;
+  height: 79px;
+  font-size: 0;
+  margin-right: 12px;
+  border-radius: 50%;
+  background-color: $social-grey;
+
+  &:hover {
+    background-color: $red;
+  }
+
+  &:active {
+    background-color: $dark-red;
+  }
+}
