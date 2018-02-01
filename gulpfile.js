@@ -74,7 +74,7 @@ gulp.task("sprite", function () {
   .pipe(gulp.dest("src/img"));
 });
 
-posthtml-include
+//posthtml-include
 gulp.task("html", function () {
   return gulp.src("src/*.html")
   .pipe(posthtml([

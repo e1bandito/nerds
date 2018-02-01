@@ -18,4 +18,26 @@
   &:active {
     background-color: $dark-red;
   }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}
+
+.social__vkontakte {
+  fill: $white;
+  padding-top: 31px;
+  padding-left: 27px;
+}
+
+.social__facebook {
+  fill: $white;
+  padding-top: 26px;
+  padding-left: 33px;
+}
+
+.social__instagramm {
+  fill: $white;
+  padding-top: 28px;
+  padding-left: 28px;
 }

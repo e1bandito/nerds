@@ -11,3 +11,15 @@
 .page-header__link {
   margin-right: 179px;
 }
+
+.page-header__logo {
+  fill: $black;
+
+  &:hover {
+    fill: $dark-grey;
+  }
+
+  &:active {
+    fill: $active-grey;
+  }
+}

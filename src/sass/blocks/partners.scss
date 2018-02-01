@@ -5,58 +5,57 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding: 46px 43px 44px 31px;
+  padding: 44px 43px 44px 31px;
   border-bottom: 2px solid $background-grey;
 }
 
-.partners__image--htmlacademy {
+.partners__link {
   position: relative;
   display: block;
-  padding-top: 14px;
-  background-image: url("../img");
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .partners__link--htmlacademy {
-  position: relative;
+  width: 198px;
+  height: 68px;
+  margin-top: 18px;
+  background-image: url("../img/logo-1.png");
+
+  &:hover {
+    background-image: url("../img/logo-1-hover.png");
+  }
+
+  &:active {
+    background-image: url("../img/logo-1-active.png");
+  }
 
   &::after {
     display: block;
     position: absolute;
     content: "";
     height: 50px;
-    top: 20px;
-    right: -50px;
+    top: 2px;
+    right: -51px;
     border: 1px solid $background-grey;
   }
-}
-
-.partners__image--barbershop {
-  display: block;
-  margin-left: 96px;
 }
 
 .partners__link--barbershop {
-  position: relative;
+  width: 209px;
+  height: 90px;
+  margin-left: 95px;
+  background-image: url("../img/logo-2.png");
 
-  &::after {
-    display: block;
-    position: absolute;
-    content: "";
-    height: 50px;
-    top: 18px;
-    right: -45px;
-    border: 1px solid $background-grey;
+  &:hover {
+    background-image: url("../img/logo-2-hover.png");
+    background-position: center 2px;
   }
-}
 
-.partners__image--pink {
-  display: block;
-  padding-top: 17px;
-  margin-left: 101px;
-}
-
-.partners__link--pink {
-  position: relative;
+  &:active {
+    background-image: url("../img/logo-2-active.png");
+  }
 
   &::after {
     display: block;
@@ -64,13 +63,49 @@
     content: "";
     height: 50px;
     top: 20px;
-    right: -60px;
+    right: -47px;
     border: 1px solid $background-grey;
   }
 }
 
-.partners__image--bear {
-  display: block;
-  padding-top: 5px;
+.partners__link--pink {
+  width: 185px;
+  height: 52px;
+  margin-left: 103px;
+  margin-top: 20px;
+  background-image: url("../img/logo-3.png");
+
+  &:hover {
+    background-image: url("../img/logo-3-hover.png");
+  }
+
+  &:active {
+    background-image: url("../img/logo-3-active.png");
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 50px;
+    top: 0;
+    right: -59px;
+    border: 1px solid $background-grey;
+  }
+}
+
+.partners__link--bear {
+  width: 173px;
+  height: 84px;
   margin-left: 121px;
+  margin-top: 8px;
+  background-image: url("../img/logo-4.png");
+
+  &:hover {
+    background-image: url("../img/logo-4-hover.png");
+  }
+
+  &:active {
+    background-image: url("../img/logo-4-active.png");
+  }
 }

@@ -8,8 +8,16 @@
   </head>
   <body>
 
+    <div style="display:none">
+      <include src="./build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
-      <a class="page-header__link"><img class="page-header__logo" src="img/nerds-logo.svg" alt="Logo"></a>
+      <a class="page-header__link">
+        <svg class="page-header__logo" width="160" height="65">
+          <use xlink:href="#sprite-nerds-logo" x="0" y="0"></use>
+        </svg>
+      </a>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="#">Студия</a></li>
@@ -60,7 +68,7 @@
 
         <div class="slider__controls">
           <input class="slider__radio visually-hidden" type="radio" name="slider-radio" id="first-radio" checked>
-          <label class="slider__label" for="first-radio"><span class="slider__control-indicator">1</span></label>
+          <label class="slider__label" for="first-radio"><span class="slider__control-indicator slider__control-indicator--active">1</span></label>
           <input class="slider__radio visually-hidden" type="radio" name="slider-radio" id="second-radio">
           <label class="slider__label" for="second-radio"><span class="slider__control-indicator">2</span></label>
           <input class="slider__radio visually-hidden" type="radio" name="slider-radio" id="third-radio">
@@ -123,10 +131,10 @@
 
       <section class="partners">
         <h2 class="visually-hidden">Наши работы</h2>
-        <a class="partners__link partners__link--htmlacademy" href="#"><img class="partners__image partners__image--htmlacademy" src="./img/logo-1.png" alt="HTML Академия"></a>
-        <a class="partners__link partners__link--barbershop" href="#"><img class="partners__image partners__image--barbershop" src="./img/logo-2.png" alt="Барбершоп Бородинский"></a>
-        <a class="partners__link partners__link--pink" href="#"><img class="partners__image partners__image--pink" src="./img/logo-3.png" alt="Пинк"></a>
-        <a class="partners__link" href="#"><img class="partners__image partners__image--bear" src="./img/logo-4.png" alt="Магазин Мишка"></a>
+        <a class="partners__link partners__link--htmlacademy" href="#">HTMLAcademy</a>
+        <a class="partners__link partners__link--barbershop" href="#">Barbershop "Бородинский"</a>
+        <a class="partners__link partners__link--pink" href="#">Pink</a>
+        <a class="partners__link partners__link--bear" href="#">Мишка</a>
       </section>
 
       <section class="map">
@@ -143,9 +151,21 @@
 
     <footer class="page-footer">
       <div class="social">
-        <a class="social__link social__link--vkontakte" href="#">Vkontakte</a>
-        <a class="social__link social__link--facebook" href="#">Facebook</a>
-        <a class="social__link social__link--instagramm" href="#">Instagramm</a>
+        <a class="social__link" href="#">Vkontakte
+          <svg class="social__vkontakte" width="26" height="15">
+            <use xlink:href="#sprite-vk-icon" x="0" y="0"></use>
+          </svg>
+        </a>
+        <a class="social__link" href="#">Facebook
+          <svg class="social__facebook" width="12" height="22">
+            <use xlink:href="#sprite-fb-icon" x="0" y="0"></use>
+          </svg>
+        </a>
+        <a class="social__link" href="#">Instagramm
+          <svg class="social__instagramm" width="21" height="21">
+            <use xlink:href="#sprite-insta-icon" x="0" y="0"></use>
+          </svg>
+        </a>
       </div>
       <div class="page-footer__info">
         <h2 class="page-footer__title">Давайте дружить, это выгодно!</h2>

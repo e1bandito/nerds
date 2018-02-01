@@ -50,6 +50,20 @@
   cursor: pointer;
 }
 
+.slider__control-indicator {
+  display: block;
+  width: 5px;
+  height: 5px;
+  margin: 6px;
+  border-radius: 50%;
+  background-color: $white;
+  cursor: pointer;
+}
+
+.slider__control-indicator--active {
+  border: 1px solid $slider-control-grey;
+}
+
 .slider__link {
   display: block;
   width: 240px;

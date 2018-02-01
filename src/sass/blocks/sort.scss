@@ -8,3 +8,75 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.sort__item-header {
+  display: flex;
+  justify-content: flex-start;
+  background-color: $background-grey;
+  border-radius: 5px 5px 0 0;
+  padding: 12px;
+}
+
+.sort__controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.sort__label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $sort-text-grey;
+  cursor: pointer;
+  margin-left: 21px;
+
+  &:hover {
+    color: $text-grey;
+  }
+}
+
+.sort__label-image {
+  fill: $sort-text-grey;
+
+  &:hover {
+    fill: $text-grey;
+  }
+}
+
+.sort__checkbox:checked + .sort__label {
+  color: $black;
+
+  & svg {
+    fill: black;
+  }
+}
+
+.sort__checkbox {
+  margin-left: auto;
+}
+
+.sort__item-controls {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $white;
+  margin-right: 8px;
+}
+
+.sort__label--arrow-down {
+  font-size: 0;
+  margin-left: 45px;
+}
+
+.sort__label--arrow-up {
+  font-size: 0;
+  margin-left: 19px;
+}

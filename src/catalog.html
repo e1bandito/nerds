@@ -9,8 +9,15 @@
 
   <body>
 
+    <div style="display:none">
+      <include src="./build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
-      <a class="page-header__link" href="./index.html"><img src="img/nerds-logo.svg" alt="Logo" class="page-header__logo"></a>
+      <a class="page-header__link" href="./index.html">
+        <svg class="page-header__logo" width="160" height="65">
+          <use xlink:href="#sprite-nerds-logo" x="0" y="0"></use>
+        </svg></a>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="./index.html">Студия</a></li>
@@ -28,7 +35,7 @@
 
     <main class="page-catalog">
 
-    <h1 class="catalog__title">Магазин готовых шаблонов</h1>
+    <h1 class="page-catalog__title">Магазин готовых шаблонов</h1>
 
       <section class="sort-form">
 
@@ -77,16 +84,26 @@
       <section class="sort">
         <div class="sort__controls">
           <span class="sort__title">СОРТИРОВАТЬ:</span>
-          <input type="checkbox" name="price" id="price" class="sort__checkbox" checked>
-          <label for="price" class="sort__label">По цене</label>
-          <input type="checkbox" name="type" id="type" class="sort__checkbox">
-          <label for="type" class="sort__label">По типу</label>
-          <input type="checkbox" name="name" id="name" class="sort__checkbox">
-          <label for="name" class="sort__label">По названию</label>
-          <input type="radio" name="arrows" id="arrow-down" class="sort__checkbox" value="arrow-down" checked>
-          <label for="arrow-down" class="sort__label">Стрелка вниз</label>
-          <input type="radio" name="arrows" id="arrow-up" class="sort__checkbox" value="arrow-up">
-          <label for="arrow-up" class="sort__label">Стрелка вверх</label>
+          <div class="sort__controls-wrapper">
+            <input class="sort__checkbox visually-hidden" type="checkbox" name="price" id="price" checked>
+            <label class="sort__label" for="price">По цене</label>
+            <input class="sort__checkbox visually-hidden" type="checkbox" name="type" id="type">
+            <label class="sort__label" for="type">По типу</label>
+            <input class="sort__checkbox visually-hidden" type="checkbox" name="name" id="name">
+            <label class="sort__label" for="name">По названию</label>
+            <input class="sort__checkbox sort__checkbox--arrow-down visually-hidden" type="radio" name="arrows" id="arrow-down" value="arrow-down" checked>
+            <label class="sort__label sort__label--arrow-down" for="arrow-down">Стрелка вниз
+              <svg class="sort__label-image" width="11" height="10">
+                <use xlink:href="#sprite-icon-down" x="0" y="0"></use>
+              </svg>
+            </label>
+            <input class="sort__checkbox sort__checkbox--arrow-up visually-hidden" type="radio" name="arrows" id="arrow-up" value="arrow-up">
+            <label class="sort__label sort__label--arrow-up" for="arrow-up">Стрелка вверх
+              <svg class="sort__label-image" width="11" height="10">
+                <use xlink:href="#sprite-icon-up" x="0" y="0"></use>
+              </svg>
+            </label>
+          </div>
         </div>
 
         <div class="sort__results">
@@ -97,7 +114,7 @@
               <span class="sort__item-controls"></span>
               <span class="sort__item-controls"></span>
             </div>
-            <img class="sort__item-image" src="http://placehold.it/360x576" alt="Демонстрационный макет">
+            <img class="sort__item-image" src="../img/img-sedona-jpg.jpg" alt="Демонстрационный макет" width="360" height="576">
             <div class="sort__item-info">
               <h3 class="sort__item-title">Sedona</h3>
               <p class="sort__item-text">Информационный сайт для туристов</p>
@@ -111,10 +128,10 @@
               <span class="sort__item-controls"></span>
               <span class="sort__item-controls"></span>
             </div>
-            <img class="sort__item-image" src="http://placehold.it/360x576" alt="Демонстрационный макет">
+            <img class="sort__item-image" src="../img/img-pink-jpg.jpg" alt="Демонстрационный макет" width="360" height="576">
             <div class="sort__item-info">
-              <h3 class="sort__item-title">Sedona</h3>
-              <p class="sort__item-text">Информационный сайт для туристов</p>
+              <h3 class="sort__item-title">PINK</h3>
+              <p class="sort__item-text">Приложение "PINK"</p>
               <a class="sort__item-link" href="#">9 900 РУБ.</a>
             </div>
           </div>
@@ -125,10 +142,10 @@
               <span class="sort__item-controls"></span>
               <span class="sort__item-controls"></span>
             </div>
-            <img class="sort__item-image" src="http://placehold.it/360x576" alt="Демонстрационный макет">
+            <img class="sort__item-image" src="../img/img-barbershop-jpg.jpg" alt="Демонстрационный макет" width="360" height="576">
             <div class="sort__item-info">
-              <h3 class="sort__item-title">Sedona</h3>
-              <p class="sort__item-text">Информационный сайт для туристов</p>
+              <h3 class="sort__item-title">Borodinski</h3>
+              <p class="sort__item-text">Барбершоп "Borodinski"</p>
               <a class="sort__item-link" href="#">9 900 РУБ.</a>
             </div>
           </div>
@@ -139,10 +156,10 @@
               <span class="sort__item-controls"></span>
               <span class="sort__item-controls"></span>
             </div>
-            <img class="sort__item-image" src="http://placehold.it/360x576" alt="Демонстрационный макет">
+            <img class="sort__item-image" src="../img/img-mishka-jpg.jpg" alt="Демонстрационный макет" width="360" height="576">
             <div class="sort__item-info">
-              <h3 class="sort__item-title">Sedona</h3>
-              <p class="sort__item-text">Информационный сайт для туристов</p>
+              <h3 class="sort__item-title">Mishka</h3>
+              <p class="sort__item-text">Магазин вязаных штук "Mishka"</p>
               <a class="sort__item-link" href="#">9 900 РУБ.</a>
             </div>
           </div>
@@ -153,10 +170,10 @@
               <span class="sort__item-controls"></span>
               <span class="sort__item-controls"></span>
             </div>
-            <img class="sort__item-image" src="http://placehold.it/360x576" alt="Демонстрационный макет">
+            <img class="sort__item-image" src="../img/img-aplus-jpg.jpg" alt="Демонстрационный макет" width="360" height="576">
             <div class="sort__item-info">
-              <h3 class="sort__item-title">Sedona</h3>
-              <p class="sort__item-text">Информационный сайт для туристов</p>
+              <h3 class="sort__item-title">A+</h3>
+              <p class="sort__item-text">Программы обучения для учащихся</p>
               <a class="sort__item-link" href="#">9 900 РУБ.</a>
             </div>
           </div>
@@ -167,10 +184,10 @@
               <span class="sort__item-controls"></span>
               <span class="sort__item-controls"></span>
             </div>
-            <img class="sort__item-image" src="http://placehold.it/360x576" alt="Демонстрационный макет">
+            <img class="sort__item-image" src="../img/img-kvast-jpg.jpg" alt="Демонстрационный макет" width="360" height="576">
             <div class="sort__item-info">
-              <h3 class="sort__item-title">Sedona</h3>
-              <p class="sort__item-text">Информационный сайт для туристов</p>
+              <h3 class="sort__item-title">"Кваст"</h3>
+              <p class="sort__item-text">Крафтовый квас всему голова</p>
               <a class="sort__item-link" href="#">9 900 РУБ.</a>
             </div>
           </div>
@@ -201,9 +218,21 @@
 
     <footer class="page-footer">
       <div class="social">
-        <a class="social__link social__link--vkontakte" href="#">Vkontakte</a>
-        <a class="social__link social__link--facebook" href="#">Facebook</a>
-        <a class="social__link social__link--instagramm" href="#">Instagramm</a>
+        <a class="social__link" href="#">Vkontakte
+          <svg class="social__vkontakte" width="26" height="15">
+            <use xlink:href="#sprite-vk-icon" x="0" y="0"></use>
+          </svg>
+        </a>
+        <a class="social__link" href="#">Facebook
+          <svg class="social__facebook" width="12" height="22">
+            <use xlink:href="#sprite-fb-icon" x="0" y="0"></use>
+          </svg>
+        </a>
+        <a class="social__link" href="#">Instagramm
+          <svg class="social__instagramm" width="21" height="21">
+            <use xlink:href="#sprite-insta-icon" x="0" y="0"></use>
+          </svg>
+        </a>
       </div>
       <div class="page-footer__info">
         <h2 class="page-footer__title">Давайте дружить, это выгодно!</h2>
