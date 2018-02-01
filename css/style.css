@@ -461,6 +461,13 @@ a {
 .page-header__link {
   margin-right: 179px; }
 
+.page-header__logo {
+  fill: #000000; }
+  .page-header__logo:hover {
+    fill: #303030; }
+  .page-header__logo:active {
+    fill: #a7a7a7; }
+
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,11 +499,21 @@ a {
   padding: 10px; }
 
 .main-nav__cart {
+  position: relative;
   text-transform: uppercase;
   padding-top: 32px;
   padding-right: 1px;
   padding-left: 41px;
   margin-left: auto; }
+  .main-nav__cart::before {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 22px;
+    left: 1px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/cart-icon.svg"); }
 
 .main-nav__link {
   color: #000000; }
@@ -558,6 +575,18 @@ a {
   margin-right: 16px;
   background-color: #ffffff;
   cursor: pointer; }
+
+.slider__control-indicator {
+  display: block;
+  width: 5px;
+  height: 5px;
+  margin: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer; }
+
+.slider__control-indicator--active {
+  border: 1px solid #c1c1c1; }
 
 .slider__link {
   display: block;
@@ -752,60 +781,82 @@ a {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 46px 43px 44px 31px;
+  padding: 44px 43px 44px 31px;
   border-bottom: 2px solid #eeeeee; }
 
-.partners__image--htmlacademy {
+.partners__link {
   position: relative;
   display: block;
-  padding-top: 14px; }
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .partners__link--htmlacademy {
-  position: relative; }
+  width: 198px;
+  height: 68px;
+  margin-top: 18px;
+  background-image: url("../img/logo-1.png"); }
+  .partners__link--htmlacademy:hover {
+    background-image: url("../img/logo-1-hover.png"); }
+  .partners__link--htmlacademy:active {
+    background-image: url("../img/logo-1-active.png"); }
   .partners__link--htmlacademy::after {
     display: block;
     position: absolute;
     content: "";
     height: 50px;
-    top: 20px;
-    right: -50px;
+    top: 2px;
+    right: -51px;
     border: 1px solid #eeeeee; }
 
-.partners__image--barbershop {
-  display: block;
-  margin-left: 96px; }
-
 .partners__link--barbershop {
-  position: relative; }
+  width: 209px;
+  height: 90px;
+  margin-left: 95px;
+  background-image: url("../img/logo-2.png"); }
+  .partners__link--barbershop:hover {
+    background-image: url("../img/logo-2-hover.png");
+    background-position: center 2px; }
+  .partners__link--barbershop:active {
+    background-image: url("../img/logo-2-active.png"); }
   .partners__link--barbershop::after {
     display: block;
     position: absolute;
     content: "";
     height: 50px;
-    top: 18px;
-    right: -45px;
+    top: 20px;
+    right: -47px;
     border: 1px solid #eeeeee; }
 
-.partners__image--pink {
-  display: block;
-  padding-top: 17px;
-  margin-left: 101px; }
-
 .partners__link--pink {
-  position: relative; }
+  width: 185px;
+  height: 52px;
+  margin-left: 103px;
+  margin-top: 20px;
+  background-image: url("../img/logo-3.png"); }
+  .partners__link--pink:hover {
+    background-image: url("../img/logo-3-hover.png"); }
+  .partners__link--pink:active {
+    background-image: url("../img/logo-3-active.png"); }
   .partners__link--pink::after {
     display: block;
     position: absolute;
     content: "";
     height: 50px;
-    top: 20px;
-    right: -60px;
+    top: 0;
+    right: -59px;
     border: 1px solid #eeeeee; }
 
-.partners__image--bear {
-  display: block;
-  padding-top: 5px;
-  margin-left: 121px; }
+.partners__link--bear {
+  width: 173px;
+  height: 84px;
+  margin-left: 121px;
+  margin-top: 8px;
+  background-image: url("../img/logo-4.png"); }
+  .partners__link--bear:hover {
+    background-image: url("../img/logo-4-hover.png"); }
+  .partners__link--bear:active {
+    background-image: url("../img/logo-4-active.png"); }
 
 .map {
   position: relative;
@@ -897,6 +948,18 @@ a {
   width: 1440px;
   margin: 0 auto; }
 
+.page-catalog__title {
+  width: 100%;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  text-align: center;
+  margin: 0;
+  padding-top: 75px;
+  padding-bottom: 108px;
+  background-color: #eeeeee;
+  margin-bottom: 59px; }
+
 .sort-form {
   width: 261px;
   margin-left: 140px; }
@@ -924,6 +987,70 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.sort__item-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #eeeeee;
+  border-radius: 5px 5px 0 0;
+  padding: 12px; }
+
+.sort__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.sort__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px; }
+
+.sort__label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #b8b8b8;
+  cursor: pointer;
+  margin-left: 21px; }
+  .sort__label:hover {
+    color: #666666; }
+
+.sort__label-image {
+  fill: #b8b8b8; }
+  .sort__label-image:hover {
+    fill: #666666; }
+
+.sort__checkbox:checked + .sort__label {
+  color: #000000; }
+  .sort__checkbox:checked + .sort__label svg {
+    fill: black; }
+
+.sort__checkbox {
+  margin-left: auto; }
+
+.sort__item-controls {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-right: 8px; }
+
+.sort__label--arrow-down {
+  font-size: 0;
+  margin-left: 45px; }
+
+.sort__label--arrow-up {
+  font-size: 0;
+  margin-left: 19px; }
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -943,3 +1070,20 @@ a {
     background-color: #e74246; }
   .social__link:active {
     background-color: #d7373b; }
+  .social__link:active svg {
+    opacity: 0.3; }
+
+.social__vkontakte {
+  fill: #ffffff;
+  padding-top: 31px;
+  padding-left: 27px; }
+
+.social__facebook {
+  fill: #ffffff;
+  padding-top: 26px;
+  padding-left: 33px; }
+
+.social__instagramm {
+  fill: #ffffff;
+  padding-top: 28px;
+  padding-left: 28px; }
