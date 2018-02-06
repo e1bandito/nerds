@@ -15,4 +15,90 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0;
+  margin-bottom: 50px;
+}
+
+.sort-form__range {
+  width: 260px;
+  box-sizing: border-box;
+}
+
+.sort-form__range-controls {
+  background-color: $background-grey;
+  padding: 38px 19px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.sort-form__scale {
+  width: 219px;
+  height: 2px;
+  background-color: $range-controls-grey;
+}
+
+.sort-form__bar {
+  position: relative;
+  width: 73%;
+  height: 2px;
+  background-color: $light-green;
+}
+
+.sort-form__toggle {
+  position: absolute;
+  top: -9px;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 8px solid $white;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  background-color: $range-toggle-grey;
+  cursor: pointer;
+}
+
+.sort-form__toggle--min {
+  left: 0%;
+}
+
+.sort-form__toggle--max {
+  right: 0%;
+}
+
+.sort-form__range-value {
+  display: flex;
+  justify-content: flex-start;
+  width: 260px;
+  margin-bottom: 41px;
+}
+
+.sort-form__range-label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 38px;
+  margin-right: 11px;
+}
+
+.sort-form__range-input {
+  box-sizing: border-box;
+  width: 80px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  background-color: $background-grey;
+  border-radius: 3px;
+  padding: 8px;
+  border: none;
+}
+
+.sort-form__range-value label:nth-last-of-type(1) {
+  margin-left: 33px;
+}
+
+.sort-form__grid-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
 }

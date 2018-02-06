@@ -42,7 +42,23 @@
         <form action="https://echo.htmlacademy.ru" method="get">
           <h2 class="sort-form__title">СТОИМОСТЬ:</h2>
 
-          <input class="sort-form__range" type="range" name="price-range" id="price-range">
+          <div class="sort-form__range">
+            <div class="sort-form__range-controls">
+              <div class="sort-form__scale">
+                <div class="sort-form__bar">
+                  <div class="sort-form__toggle sort-form__toggle--min"></div>
+                  <div class="sort-form__toggle sort-form__toggle--max"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sort-form__range-value">
+              <label class="sort-form__range-label" for="range-input-min">ОТ</label>
+              <input class="sort-form__range-input" id="range-input-min" type="text" value="0">
+              <label class="sort-form__range-label" for="range-input-max">ДО</label>
+              <input class="sort-form__range-input" id="range-input-max" type="text" value="15000">
+            </div>
+          </div>
 
           <div class="sort-form__grid">
             <h2 class="sort-form__grid-title">СЕТКА:</h2>
