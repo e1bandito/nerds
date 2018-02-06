@@ -39,40 +39,38 @@
 
       <section class="slider">
 
-        <div class="slider__item">
+        <input class="slider__radio visually-hidden slider__radio-first" type="radio" name="slider-radio" id="first-radio" checked>
+        <input class="slider__radio visually-hidden slider__radio-second" type="radio" name="slider-radio" id="second-radio">
+        <input class="slider__radio visually-hidden slider__radio-third" type="radio" name="slider-radio" id="third-radio">
+
+        <div class="slider__controls">
+          <label class="slider__label" for="first-radio"><span class="slider__control-indicator slider__control-indicator--first">1</span></label>
+          <label class="slider__label" for="second-radio"><span class="slider__control-indicator slider__control-indicator--second">2</span></label>
+          <label class="slider__label" for="third-radio"><span class="slider__control-indicator slider__control-indicator--third">3</span></label>
+        </div>
+
+        <div class="slider__item slider__item--hide slider__first">
           <div class="slider__info">
-            <h2 class="slider__title">Долго, дорого, <br> скурпулезно.</h2>
+            <h2 class="slider__title slider__title--first">Долго, дорого, скурпулезно.</h2>
             <p class="slider__text">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
             <a class="slider__link" href="#">УЗНАТЬ БОЛЬШЕ</a>
           </div>
-          <img class="slider__image" src="./img/slide1.png" alt="Промо-картинка">
         </div>
 
-        <div class="slider__item slider__item--hide">
+        <div class="slider__item slider__item--hide slider__second">
           <div class="slider__info">
-            <h2 class="slider__title">Любим математику как никто другой</h2>
-            <p class="slider__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <h2 class="slider__title slider__title--second">Любим математику как никто другой</h2>
+            <p class="slider__text">Никакого креатива, только математические формулы <br> для расчета идеальных пропорций.</p>
             <a class="slider__link" href="#">УЗНАТЬ БОЛЬШЕ</a>
           </div>
-          <img class="slider__image" src="./img/slide2.png" alt="Промо-картинка">
         </div>
 
-        <div class="slider__item slider__item--hide">
+        <div class="slider__item slider__item--hide slider__third">
           <div class="slider__info">
-            <h2 class="slider__title">Только ночь, только хардкор</h2>
-            <p class="slider__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <h2 class="slider__title slider__title--third">Только ночь, только хардкор</h2>
+            <p class="slider__text">Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается.</p>
             <a class="slider__link" href="#">УЗНАТЬ БОЛЬШЕ</a>
           </div>
-          <img class="slider__image" src="./img/slide3.png" alt="Промо-картинка">
-        </div>
-
-        <div class="slider__controls">
-          <input class="slider__radio visually-hidden" type="radio" name="slider-radio" id="first-radio" checked>
-          <label class="slider__label" for="first-radio"><span class="slider__control-indicator slider__control-indicator--active">1</span></label>
-          <input class="slider__radio visually-hidden" type="radio" name="slider-radio" id="second-radio">
-          <label class="slider__label" for="second-radio"><span class="slider__control-indicator">2</span></label>
-          <input class="slider__radio visually-hidden" type="radio" name="slider-radio" id="third-radio">
-          <label class="slider__label" for="third-radio"><span class="slider__control-indicator">3</span></label>
         </div>
 
       </section>
