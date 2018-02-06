@@ -85,11 +85,11 @@
         <div class="sort__controls">
           <span class="sort__title">СОРТИРОВАТЬ:</span>
           <div class="sort__controls-wrapper">
-            <input class="sort__checkbox visually-hidden" type="checkbox" name="price" id="price" checked="">
+            <input class="sort__checkbox visually-hidden" type="radio" name="type" id="price" checked="">
             <label class="sort__label" for="price">По цене</label>
-            <input class="sort__checkbox visually-hidden" type="checkbox" name="type" id="type">
+            <input class="sort__checkbox visually-hidden" type="radio" name="type" id="type">
             <label class="sort__label" for="type">По типу</label>
-            <input class="sort__checkbox visually-hidden" type="checkbox" name="name" id="name">
+            <input class="sort__checkbox visually-hidden" type="radio" name="type" id="name">
             <label class="sort__label" for="name">По названию</label>
             <input class="sort__checkbox sort__checkbox--arrow-down visually-hidden" type="radio" name="arrows" id="arrow-down" value="arrow-down" checked="">
             <label class="sort__label sort__label--arrow-down" for="arrow-down">Стрелка вниз
@@ -131,7 +131,7 @@
             <img class="sort__item-image" src="./img/img-pink-jpg.jpg" alt="Демонстрационный макет" width="360" height="576">
             <div class="sort__item-info">
               <h3 class="sort__item-title">PINK</h3>
-              <p class="sort__item-text">Приложение "PINK"</p>
+              <p class="sort__item-text">Взгляни на жизнь иначе! "PINK"</p>
               <a class="sort__item-link" href="#">9 900 РУБ.</a>
             </div>
           </div>
@@ -145,7 +145,7 @@
             <img class="sort__item-image" src="./img/img-barbershop-jpg.jpg" alt="Демонстрационный макет" width="360" height="576">
             <div class="sort__item-info">
               <h3 class="sort__item-title">Borodinski</h3>
-              <p class="sort__item-text">Барбершоп "Borodinski"</p>
+              <p class="sort__item-text">Барбершоп "Borodinski". Быстро. Круто. Дорого.</p>
               <a class="sort__item-link" href="#">9 900 РУБ.</a>
             </div>
           </div>
@@ -195,10 +195,10 @@
         </div>
 
         <div class="sort__pagination">
-          <a class="sort__pagination-link" href="#">1</a>
+          <a class="sort__pagination-link sort__pagination-link--active" href="#">1</a>
           <a class="sort__pagination-link" href="#">2</a>
           <a class="sort__pagination-link" href="#">3</a>
-          <a class="sort__pagination-link" href="#">Следующая</a>
+          <a class="sort__pagination-link sort__pagination-link--next" href="#">Следующая</a>
         </div>
 
       </section>
@@ -208,7 +208,7 @@
         <img class="map__image" src="img/-----2.png" alt="Карта">
         <div class="map__contacts">
           <h3 class="map__title">NЁRDS DESIGN STUDIO</h3>
-          <p class="map__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="map__address">191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
           <p class="map__phone">тел. +7 (812) 275-75-75</p>
           <a class="map__link" href="#">Напишите нам</a>
         </div>
