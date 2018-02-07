@@ -14,6 +14,10 @@
   background-color: $white;
 }
 
+.modal__visible {
+  display: block;
+}
+
 .modal__title {
   font-family: inherit;
   font-size: 45px;
