@@ -21,7 +21,9 @@
 
 .sort__item {
   position: relative;
+  width: 360px;
   margin-bottom: 34px;
+  background-color: $background-grey;
 
   &:hover {
     box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
