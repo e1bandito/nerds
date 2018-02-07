@@ -96,9 +96,126 @@
   margin-left: 33px;
 }
 
+.sort-form__grid {
+  padding-bottom: 11px;
+}
+
 .sort-form__grid-title {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.sort-form__grid-label-radio {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  position: relative;
+  padding-left: 35px;
+  padding-bottom: 22px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    display: block;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/radio-off.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.sort-form__grid-type-radio:checked + .sort-form__grid-label-radio::before {
+  background-image: url("../img/radio-on.svg");
+}
+
+.sort-form__grid-type-radio:checked:hover + .sort-form__grid-label-radio::before {
+  background-image: url("../img/radio-on-hover.svg");
+  transition: .3s;
+}
+
+.sort-form__grid-type-radio:hover + .sort-form__grid-label-radio::before {
+  background-image: url("../img/radio-off-hover.svg");
+  transition: .3s;
+}
+
+.sort-form__grid-type-radio:required + .sort-form__grid-label-radio::before {
+  background-image: url("../img/radio-off-required.svg");
+}
+
+.sort-form__grid-type-radio:checked:required + .sort-form__grid-label-radio::before {
+  background-image: url("../img/radio-on-required.svg");
+}
+
+.sort-form__grid-label-checkbox {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  position: relative;
+  padding-left: 35px;
+  padding-bottom: 22px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    display: block;
+    content: "";
+    width: 27px;
+    height: 25px;
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+}
+
+.sort-form__grid-type-checkbox:checked + .sort-form__grid-label-checkbox::before {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.sort-form__grid-type-checkbox:checked:hover + .sort-form__grid-label-checkbox::before {
+  background-image: url("../img/checkbox-on-hover.svg");
+}
+
+.sort-form__grid-type-checkbox:hover + .sort-form__grid-label-checkbox::before {
+  background-image: url("../img/checkbox-off-hover.svg");
+}
+
+.sort-form__grid-type-checkbox:required + .sort-form__grid-label-checkbox::before {
+  background-image: url("../img/checkbox-off-required.svg");
+}
+
+.sort-form__grid-type-checkbox:checked:required + .sort-form__grid-label-checkbox::before {
+  background-image: url("../img/checkbox-on-required.svg");
+}
+
+.sort-form__button {
+  width: 260px;
+  margin-top: 17px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-top: 18px;
+  padding-bottom: 15px;
+  border: none;
+  border-radius: 3px;
+  background-color: $background-grey;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $pagination-hover-grey;
+  }
+
+  &:active {
+    background-color: $pagination-active-grey;
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    color: $text-dark-grey;
+  }
 }

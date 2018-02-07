@@ -62,34 +62,29 @@
 
           <div class="sort-form__grid">
             <h2 class="sort-form__grid-title">СЕТКА:</h2>
-            <label class="sort-form__grid-label" for="adaptive">
-              <input class="sort-form__grid-type" name="grid-type" id="adaptive" type="radio" value="adaptive" checked>
-            Адаптивная</label>
-            <label class="sort-form__grid-label" for="fix">
-              <input class="sort-form__grid-type" name="grid-type" id="fix" type="radio" value="fix">
-            Фиксированная</label>
-            <label class="sort-form__grid-label" for="rubber">
-              <input class="sort-form__grid-type" name="grid-type" id="rubber" type="radio" value="rubber">
-            Резиновая</label>
+            <input class="sort-form__grid-type-radio visually-hidden" name="grid-type" id="adaptive" type="radio" value="adaptive" checked>
+            <label class="sort-form__grid-label-radio" for="adaptive">Адаптивная</label>
+            <input class="sort-form__grid-type-radio visually-hidden" name="grid-type" id="fix" type="radio" value="fix">
+            <label class="sort-form__grid-label-radio" for="fix">Фиксированная</label>
+            <input class="sort-form__grid-type-radio visually-hidden" name="grid-type" id="rubber" type="radio" value="rubber">
+            <label class="sort-form__grid-label-radio" for="rubber">Резиновая</label>
           </div>
 
-          <div class="sort-form__grid">
+          <div class="sort-form__grid sort-form__grid--second">
             <h2 class="sort-form__grid-title">ОСОБЕННОСТИ:</h2>
-            <label class="sort-form__grid-label" for="slider">
-              <input class="sort-form__grid-type" name="slider" id="slider" type="checkbox" checked>
-            Слайдер</label>
-            <label class="sort-form__grid-label" for="features">
-              <input class="sort-form__grid-type" name="features" id="features" type="checkbox">
+            <input class="sort-form__grid-type-checkbox visually-hidden" name="slider" id="slider" type="checkbox" checked>
+            <label class="sort-form__grid-label-checkbox" for="slider">Слайдер</label>
+            <input class="sort-form__grid-type-checkbox visually-hidden" name="features" id="features" type="checkbox">
+            <label class="sort-form__grid-label-checkbox" for="features">
             Блок преимуществ</label>
-            <label class="sort-form__grid-label" for="news">
-              <input class="sort-form__grid-type" name="news" id="news" type="checkbox" checked>
+            <input class="sort-form__grid-type-checkbox visually-hidden" name="news" id="news" type="checkbox" checked>
+            <label class="sort-form__grid-label-checkbox" for="news">
             Новости</label>
-            <label class="sort-form__grid-label" for="galery">
-              <input class="sort-form__grid-type" name="galery" id="galery" type="checkbox">
+            <input class="sort-form__grid-type-checkbox visually-hidden" name="galery" id="galery" type="checkbox">
+            <label class="sort-form__grid-label-checkbox" for="galery">
             Галерея</label>
-            <label class="sort-form__grid-label" for="cart">
-              <input class="sort-form__grid-type" name="cart" id="cart" type="checkbox">
-            Корзина</label>
+            <input class="sort-form__grid-type-checkbox visually-hidden" name="cart" id="cart" type="checkbox">
+            <label class="sort-form__grid-label-checkbox" for="cart">Корзина</label>
           </div>
 
           <button class="sort-form__button" type="submit">Показать</button>
@@ -221,7 +216,7 @@
 
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <img class="map__image" src="img/-----2.png" alt="Карта">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7041afc16cafbf37f714e6c9c5218b478eee1b093ebcd71525c065e304f8579a&amp;source=constructor" width="100%" height="417" frameborder="0"></iframe>
         <div class="map__contacts">
           <h3 class="map__title">NЁRDS DESIGN STUDIO</h3>
           <p class="map__address">191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
