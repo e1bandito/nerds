@@ -6,6 +6,7 @@
 .sort-form__grid {
   display: flex;
   flex-direction: column;
+  padding-bottom: 11px;
 }
 
 .sort-form__title {
@@ -96,10 +97,6 @@
   margin-left: 33px;
 }
 
-.sort-form__grid {
-  padding-bottom: 11px;
-}
-
 .sort-form__grid-title {
   font-size: 18px;
   font-weight: 700;
@@ -136,12 +133,12 @@
 
 .sort-form__grid-type-radio:checked:hover + .sort-form__grid-label-radio::before {
   background-image: url("../img/radio-on-hover.svg");
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .sort-form__grid-type-radio:hover + .sort-form__grid-label-radio::before {
   background-image: url("../img/radio-off-hover.svg");
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .sort-form__grid-type-radio:required + .sort-form__grid-label-radio::before {

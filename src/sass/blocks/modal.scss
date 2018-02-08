@@ -94,7 +94,7 @@
 
   &:hover {
     background-color: $red;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   &:active {
@@ -117,12 +117,12 @@
 
   &:hover {
     background-image: url("../img/close-cross-hover.svg");
-    transition: .3s;
+    transition: 0.3s;
   }
 
   &:active {
     background-image: url("../img/close-cross-active.svg");
-    transition: .2s;
+    transition: 0.2s;
   }
 }
 
@@ -132,13 +132,15 @@
 }
 
 @keyframes bounce {
-	0% {
-		transform: translateX(1000px);
+  0% {
+    transform: translateX(1000px);
   }
+
   70% {
-		transform: translateX(-80px);
-	}
-	100% {
-		transform: translateX(0);
-	}
+    transform: translateX(-80px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }

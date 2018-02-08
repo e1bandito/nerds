@@ -35,7 +35,7 @@
 
   &:hover > .sort__item-header {
     background-color: $header-catalog-item;
-    transition: .5s;
+    transition: 0.5s;
   }
 }
 
@@ -119,7 +119,7 @@
   width: 360px;
   background-color: $background-grey;
   padding: 30px 80px 42px 80px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .sort__item-title {
@@ -157,7 +157,7 @@
 
   &:hover {
     background-color: $red;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   &:active {
