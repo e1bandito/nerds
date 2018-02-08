@@ -2,39 +2,40 @@
 
 (function () {
 
-  const mapLink = document.querySelector('.map__link');
-  const modal = document.querySelector('.modal');
-  const modalCloseButton = document.querySelector('.modal__close');
-  const ESC_KEYCODE = 27;
-  const ENTER_KEYCODE = 13;
+  var mapLinkButton = document.querySelector('.map__link');
+  var modalWindow = document.querySelector('.modal');
+  var modalCloseButton = document.querySelector('.modal__close');
+  var ESC_KEYCODE = 27;
+  var ENTER_KEYCODE = 13;
 
-  mapLink.addEventListener('click', function modalActivate(evt) {
-
-    evt.preventDefault();
-    modal.classList.add('modal__visible');
-  });
-
-  modalCloseButton.addEventListener('click', function onModalClick(evt) {
+  mapLinkButton.addEventListener('click', function (evt) {
 
     evt.preventDefault();
-    modal.classList.remove('modal__visible');
+    modalWindow.classList.add('modal__visible');
 
   });
 
-  document.addEventListener('keydown', function onEscPress(evt) {
+  modalCloseButton.addEventListener('click', function (evt) {
+
+    evt.preventDefault();
+    modalWindow.classList.remove('modal__visible');
+
+  });
+
+  document.addEventListener('keydown', function (evt) {
 
     if (evt.keyCode === ESC_KEYCODE) {
-      modal.classList.remove('modal__visible');
+      modalWindow.classList.remove('modal__visible');
     }
 
   });
 
-  modalCloseButton.addEventListener('keydown', function onEnterPress(evt) {
+  modalCloseButton.addEventListener('keydown', function (evt) {
 
     if (evt.keyCode === ENTER_KEYCODE) {
-      modal.classList.remove('modal__visible');
+      modalWindow.classList.remove('modal__visible');
     }
 
-  })
+  });
 
 }());
