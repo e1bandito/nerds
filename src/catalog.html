@@ -254,10 +254,10 @@
     <div class="modal">
       <h2 class="modal__title">Напишите нам</h2>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="modal__label" for="name">Ваше имя:</label>
+        <label class="modal__label" for="first-name">Ваше имя:</label>
         <label class="modal__label" for="mail">Ваш e-mail:</label>
-        <input class="modal__input" id="name" type="text" placeholder="Представьтесь, пожалуйста">
-        <input class="modal__input" id="mail" type="text" placeholder="Для отправки ответа">
+        <input class="modal__input" id="first-name" name="first-name" type="text" placeholder="Представьтесь, пожалуйста">
+        <input class="modal__input" id="mail" name="email" type="text" placeholder="Для отправки ответа">
         <label class="modal__label" for="textarea">Текст письма:</label>
         <textarea class="modal__textarea" name="textarea" id="textarea" cols="30" rows="5" placeholder="В свободной форме"></textarea>
         <button class="modal__submit" type="submit">Отправить</button>
@@ -265,7 +265,7 @@
       </form>
     </div>
 
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.min.js"></script>
 
   </body>
 </html>
