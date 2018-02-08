@@ -14,10 +14,6 @@
   background-color: $white;
 }
 
-.modal__visible {
-  display: block;
-}
-
 .modal__title {
   font-family: inherit;
   font-size: 45px;
@@ -128,4 +124,21 @@
     background-image: url("../img/close-cross-active.svg");
     transition: .2s;
   }
+}
+
+.modal__visible {
+  display: block;
+  animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateX(1000px);
+  }
+  70% {
+		transform: translateX(-80px);
+	}
+	100% {
+		transform: translateX(0);
+	}
 }
