@@ -1,3 +1,3 @@
 # Nerds
 
-## e1bandito.github.io/nerds/
+## [gh-pages nerds](e1bandito.github.io/nerds/)
